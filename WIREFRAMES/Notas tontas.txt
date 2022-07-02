@@ -1,7 +1,0 @@
-Hola, unas cositas nomas. El orden de los htmls no es el que aparece en los wireframes. El orden correcto es:
-
-INICIO - MEDIA - PRODUCTOS - CONTACTOS - ABOUT
-
-Me olvide que habia que hacer los wireframes para la entrega y los hice a las apuradas, no llegue a hacer el de productos T.T.
-
-
