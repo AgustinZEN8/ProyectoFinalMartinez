@@ -1,0 +1,466 @@
+/* Algunas etiquetas como "main" o "header" no tienen clase porque me di cuenta tarde, no las cambie luego porque al darle una clase a "body" no se pisaron entre si los distintos "mains" de cada pagina por ejemplo*/
+/*Pagina de Contactos*/
+* {
+  padding: 0%;
+  margin: 0%; }
+
+.bcontactos {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#145ca0, #be1934);
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  flex-direction: column; }
+  .bcontactos header .row {
+    background-color: black; }
+    .bcontactos header .row .navitem {
+      font-family: "Koulen", cursive;
+      color: white;
+      font-size: 2.4rem; }
+      .bcontactos header .row .navitem:hover {
+        color: #0956e6; }
+  .bcontactos main fieldset {
+    background-color: #be0505;
+    border: black solid 8px;
+    border-radius: 10px;
+    width: 44%;
+    margin: 1.4%;
+    margin: 2% auto; }
+    .bcontactos main fieldset h2 {
+      margin: 1%;
+      margin-left: 2.5%;
+      font-family: 'Koulen';
+      font-size: 40px;
+      color: #f7f7f7;
+      font-weight: lighter;
+      font-style: inherit; }
+    .bcontactos main fieldset .form-group {
+      font-family: 'Koulen';
+      font-size: 26px;
+      color: #f7f7f7;
+      font-weight: lighter;
+      font-style: inherit;
+      margin: 1.5%; }
+      .bcontactos main fieldset .form-group .form-control {
+        font-size: 26px; }
+      .bcontactos main fieldset .form-group #paises {
+        font-family: 'Koulen';
+        font-size: 26px;
+        display: flex;
+        flex-direction: row;
+        gap: 2%; }
+        .bcontactos main fieldset .form-group #paises .countries {
+          margin-top: -0.7%;
+          margin: 0;
+          border-radius: 4px;
+          background: #f8f8f8;
+          color: #888;
+          border: none;
+          outline: none;
+          display: inline-block;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          cursor: pointer;
+          text-align: center;
+          width: 24%;
+          height: 110%; }
+      .bcontactos main fieldset .form-group .enviar {
+        font-size: 22px; }
+  .bcontactos main #redes {
+    margin: 2% auto;
+    background-color: #be0505;
+    border: black solid 8px;
+    border-radius: 10px;
+    width: 40%; }
+    .bcontactos main #redes .icono {
+      background-color: white;
+      border: white solid 9px;
+      border-radius: 50%; }
+  .bcontactos footer {
+    width: 100%;
+    font-family: "Koulen", cursive;
+    font-size: 18px;
+    font-weight: lighter;
+    font-style: inherit;
+    color: lightgray;
+    background-color: black;
+    margin-top: 1.7%;
+    margin-bottom: 0%; }
+    .bcontactos footer .hola {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      bottom: 0%;
+      position: fixed; }
+
+@media (max-width: 768px) {
+  .bcontactos {
+    height: 100%; }
+  .bcontactos main fieldset {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .bcontactos main #redes {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .bcontactos main #redes .icono {
+    width: 70px; } }
+
+@media (max-width: 1293px) {
+  .bcontactos {
+    height: 100%; }
+  .bcontactos main fieldset {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .bcontactos main #redes {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .redes__item {
+    width: 25%;
+    background-color: none; } }
+
+/*Pagina de Home*/
+* {
+  padding: 0%;
+  margin: 0%; }
+
+.bhome {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/171fc7bd-3978-44d2-819c-ee56cff1fa60/d4yesjq-80cfd763-e4a1-43c5-9d90-5b7be67ddfb9.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3MWZjN2JkLTM5NzgtNDRkMi04MTljLWVlNTZjZmYxZmE2MFwvZDR5ZXNqcS04MGNmZDc2My1lNGExLTQzYzUtOWQ5MC01YjdiZTY3ZGRmYjkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mbH37W-DuI-AL-Pp7fCPeqSUX7OThp1znehNYMN_c_I);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .bhome header .row {
+    background-color: black; }
+    .bhome header .row .navitem {
+      font-family: "Koulen", cursive;
+      color: white;
+      font-size: 2.4rem; }
+      .bhome header .row .navitem:hover {
+        color: #0956e6; }
+  .bhome main .video {
+    margin-left: 55%;
+    margin-top: 2.3%;
+    margin-bottom: 2.3%;
+    height: 24rem; }
+    .bhome main .video iframe {
+      border: rgba(179, 31, 31, 0.993) groove 25px;
+      border-radius: 20px; }
+  .bhome main .bestsellers {
+    border: 10px solid black;
+    background: linear-gradient(#cc8b00, #dbc925);
+    font-size: 2.4rem;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    display: flex; }
+    .bhome main .bestsellers .noticias {
+      font-size: 3.5rem;
+      margin: 0.5%;
+      color: #f7f3f3;
+      justify-content: center;
+      background: linear-gradient(red, #8b0303);
+      font-family: "Koulen", cursive;
+      border: 10px black solid;
+      border-radius: 5px; }
+    .bhome main .bestsellers .carto {
+      border: 11px solid black;
+      border-bottom: none; }
+    .bhome main .bestsellers .carta {
+      border: 11px solid black;
+      font-family: "Koulen", cursive;
+      background: linear-gradient(red, #8b0303);
+      height: 135px;
+      display: flex;
+      text-align: center; }
+  .bhome footer {
+    font-family: "Koulen", cursive;
+    font-size: 18px;
+    font-weight: lighter;
+    font-style: inherit;
+    color: lightgray;
+    background-color: black;
+    position: absolute;
+    width: 100%; }
+    .bhome footer .hola {
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 94%;
+      bottom: 0%;
+      position: fixed; }
+
+@media (max-width: 1500px) {
+  .hola {
+    display: none; }
+  .video {
+    margin: 2%;
+    display: flex;
+    justify-content: center; } }
+
+@media (max-width: 410px) {
+  .hola {
+    display: none; }
+  .video {
+    display: none; } }
+
+/*Pagina de Personajes */
+* {
+  padding: 0%;
+  margin: 0%; }
+
+.bpersonajes {
+  width: 100%;
+  height: 150vh;
+  overflow-x: hidden;
+  background: radial-gradient(white, black); }
+  .bpersonajes header .row {
+    background-color: black; }
+    .bpersonajes header .row .navitem {
+      font-family: "Koulen", cursive;
+      color: white;
+      font-size: 2.4rem; }
+      .bpersonajes header .row .navitem:hover {
+        color: #0956e6; }
+  .bpersonajes main .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0.4%;
+    height: auto; }
+    .bpersonajes main .contenedor .ficha {
+      display: flex;
+      flex: nowrap;
+      border: 8px black;
+      border-style: solid;
+      border-radius: 8px;
+      margin: 1.2%;
+      height: 410px;
+      transition: 1s;
+      transform: scale(1);
+      height: auto; }
+      .bpersonajes main .contenedor .ficha:hover {
+        transform: scale(1.02); }
+      .bpersonajes main .contenedor .ficha .info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 3%; }
+      .bpersonajes main .contenedor .ficha h3 {
+        font-size: larger;
+        font-size: 23px;
+        font-family: unset;
+        color: black;
+        font-size: bolder;
+        font-weight: bold;
+        font-family: "Koulen", cursive; }
+      .bpersonajes main .contenedor .ficha .pj {
+        border: 15px #5e5252 groove;
+        align-self: center;
+        margin: 2%; }
+      .bpersonajes main .contenedor .ficha p {
+        margin: 0%;
+        display: flex;
+        flex: nowrap;
+        align-self: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 1.05rem; }
+    .bpersonajes main .contenedor #ficha1 {
+      background: -webkit-linear-gradient(#8eb1ff, #294db1);
+      background: -moz-linear-gradient(#8eb1ff, #294db1);
+      background: -o-linear-gradient(#8eb1ff, #294db1);
+      background: linear-gradient(#8eb1ff, #294db1); }
+    .bpersonajes main .contenedor #ficha2 {
+      background: -webkit-linear-gradient(#f5f38d, #d8c305);
+      background: -moz-linear-gradient(#f5f38d, #d8c305);
+      background: -o-linear-gradient(#f5f38d, #d8c305);
+      background: linear-gradient(#f5f38d, #d8c305); }
+    .bpersonajes main .contenedor #ficha3 {
+      background: -webkit-linear-gradient(#d66060, #b80000);
+      background: -moz-linear-gradient(#d66060, #b80000);
+      background: -o-linear-gradient(#d66060, #b80000);
+      background: linear-gradient(#d66060, #b80000); }
+    .bpersonajes main .contenedor #ficha4 {
+      background: -webkit-linear-gradient(#ff9ef2, #f547cf);
+      background: -moz-linear-gradient(#ff9ef2, #f547cf);
+      background: -o-linear-gradient(#ff9ef2, #f547cf);
+      background: linear-gradient(#ff9ef2, #f547cf); }
+    .bpersonajes main .contenedor #ficha5 {
+      background: -webkit-linear-gradient(#999999, #363636);
+      background: -moz-linear-gradient(#999999, #363636);
+      background: -o-linear-gradient(#999999, #363636);
+      background: linear-gradient(#999999, #363636); }
+    .bpersonajes main .contenedor #ficha6 {
+      background: -webkit-linear-gradient(#d85454, #641d1d);
+      background: -moz-linear-gradient(#d85454, #641d1d);
+      background: -o-linear-gradient(#d85454, #641d1d);
+      background: linear-gradient(#d85454, #641d1d); }
+      .bpersonajes main .contenedor #ficha6 #eggman {
+        background-color: white; }
+  .bpersonajes footer {
+    font-family: "Koulen", cursive;
+    font-size: 18px;
+    font-weight: lighter;
+    font-style: inherit;
+    color: lightgray;
+    background-color: black;
+    position: absolute;
+    width: 100%; }
+    .bpersonajes footer .hola {
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 94%;
+      bottom: 0%;
+      position: fixed;
+      display: none; }
+
+@media (max-width: 1300px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto; }
+  .ficha {
+    display: flex;
+    flex-direction: column;
+    border: 8px black;
+    border-style: solid;
+    border-radius: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto; }
+  .ficha:hover {
+    transform: scale(1.02);
+    display: none; } }
+
+  /*Pagina de Productos*/
+* {
+  padding: 0%;
+  margin: 0%; }
+
+.bproductos {
+  width: 100%;
+  background: linear-gradient(#003e70, #85c8ff); }
+  .bproductos header .row {
+    background-color: black; }
+    .bproductos header .row .navitem {
+      font-family: "Koulen", cursive;
+      color: white;
+      font-size: 2.4rem; }
+      .bproductos header .row .navitem:hover {
+        color: #0956e6; }
+  .bproductos main .vendidos {
+    font-size: 3.5rem;
+    margin: 0.5%;
+    color: #f7f3f3;
+    justify-content: center;
+    background-color: #be0505;
+    font-family: "Koulen", cursive;
+    border: 10px black solid;
+    border-radius: 5px; }
+  .bproductos main .bestsellers {
+    background-color: #810000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    border: 10px black solid;
+    border-left: none;
+    border-right: none; }
+  .bproductos main .catalogo {
+    font-size: 2.4rem;
+    margin: 0%;
+    color: #f7f3f3;
+    justify-content: center;
+    background-color: black;
+    font-family: "Koulen", cursive; }
+  .bproductos main .card {
+    margin: 2%; }
+  .bproductos footer {
+    font-family: "Koulen", cursive;
+    font-size: 18px;
+    font-weight: lighter;
+    font-style: inherit;
+    color: lightgray;
+    background-color: black;
+    position: absolute;
+    width: 100%; }
+    .bproductos footer .hola {
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 94%;
+      bottom: 1%;
+      position: fixed; }
+
+/*Pagina de About*/
+* {
+  padding: 0%;
+  margin: 0%; }
+
+.babout {
+  width: 100%;
+  background: linear-gradient(#145ca0, #be1934); }
+  .babout header .row {
+    background-color: black; }
+    .babout header .row .navitem {
+      font-family: "Koulen", cursive;
+      color: white;
+      font-size: 2.4rem; }
+      .babout header .row .navitem:hover {
+        color: #0956e6; }
+  .babout main .hola {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.95%; }
+    .babout main .hola #sega {
+      display: flex;
+      filter: brightness(1.9);
+      border: 7px black groove;
+      border-radius: 15px;
+      background-color: #444444; }
+  .babout main fieldset {
+    background: grey;
+    border: 5px solid black;
+    border-radius: 15px;
+    display: flex;
+    margin: 3%; }
+    .babout main fieldset .texto {
+      display: flex;
+      margin: 10px auto; }
+      .babout main fieldset .texto p {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        font-weight: bolder;
+        line-height: 30px;
+        display: flex;
+        margin: 20px; }
+  .babout footer {
+    font-family: "Koulen", cursive;
+    font-size: 18px;
+    font-weight: lighter;
+    font-style: inherit;
+    color: lightgray;
+    background-color: black;
+    position: absolute;
+    width: 100%; }
+
+@media (max-width: 990px) {
+  .logo {
+    width: 50%; } }
+
+@media (max-width: 650px) {
+  .elgif {
+    display: none; }
+  #sega {
+    height: 100px;
+    width: 100%;
+    margin: 3%; }
+  .logo {
+    width: 50%; } }
