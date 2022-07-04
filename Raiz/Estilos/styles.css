@@ -274,9 +274,7 @@
   height: 100vh;
   background: linear-gradient(#145ca0, #be1934);
   background-repeat: no-repeat;
-  background-size: auto;
-  display: flex;
-  flex-direction: column; }
+  background-size: auto; }
   .bcontactos header .row {
     background-color: black; }
     .bcontactos header .row .navitem {
@@ -399,7 +397,10 @@
 
 .babout {
   width: 100%;
-  background: linear-gradient(#145ca0, #be1934); }
+  background: linear-gradient(#145ca0, #be1934);
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;} 
   .babout header .row {
     background-color: black; }
     .babout header .row .navitem {
@@ -443,8 +444,9 @@
     font-style: inherit;
     color: lightgray;
     background-color: black;
-    margin-top: 1.7%;
-    margin-bottom: 0%; }
+    margin-top: 1.6%;
+    margin-bottom: 0%; 
+  }
 
 @media (max-width: 990px) {
   .logo {
