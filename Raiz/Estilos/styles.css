@@ -436,14 +436,15 @@
         display: flex;
         margin: 20px; }
   .babout footer {
+    width: 100%;
     font-family: "Koulen", cursive;
     font-size: 18px;
     font-weight: lighter;
     font-style: inherit;
     color: lightgray;
     background-color: black;
-    position: absolute;
-    width: 100%; }
+    margin-top: 1.7%;
+    margin-bottom: 0%; }
 
 @media (max-width: 990px) {
   .logo {
