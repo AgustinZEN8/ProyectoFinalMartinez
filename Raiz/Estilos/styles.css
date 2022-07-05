@@ -14,15 +14,12 @@
       font-size: 2.4rem; }
       .bhome header .row .navitem:hover {
         color: #0956e6; }
-  .bhome main .video {
-    margin-left: 55%;
+  .bhome main .comercial {
+    margin-left: 60%;
     margin-top: 2.3%;
-    margin-bottom: 2.3%;
-    height: 24rem;
-    display: flex; }
-    .bhome main .video iframe {
-      border: rgba(179, 31, 31, 0.993) groove 25px;
-      border-radius: 20px; }
+    margin-bottom: 2.3%; 
+    border: rgba(179, 31, 31, 0.993) groove 25px;
+    border-radius: 20px;}
   .bhome main .bestsellers {
     border: 10px solid black;
     background: linear-gradient(#cc8b00, #dbc925);
@@ -67,23 +64,21 @@
       position: fixed; }
 
 @media (max-width: 1500px) {
-  .hola {
+  .bhome footer .hola {
     display: none; }
-  .video {
-    margin: 2%;
-    display: flex;
-    justify-content: center; }
-  iframe{
-    position: center;
-  } }
+  .bhome main .comercial{
+    border-radius: 10px; 
+    width: 50%;
+    margin-left: 48%;
+    margin-top: 2.3%;
+    margin-bottom: 2.3%;} } 
 
-@media (max-width: 410px) {
+@media (max-width: 768px) {
   .hola {
     display: none; }
-    .bhome main .video{
-      margin: 1%;
-      margin-bottom: 5.5%;
-    } }
+  .bhome main .comercial {
+    margin: 0%;
+    width: 100%;} }
 
 * {
   padding: 0%;
