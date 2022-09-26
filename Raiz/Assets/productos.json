@@ -1,0 +1,54 @@
+{
+    "productos": [
+        {
+            "Nombre":"Coleccion de figuras Sonic The Hedgehog 2",
+            "Precio": "300$",
+            "Stock":99
+        },
+        {
+            "Nombre":"Sonic mania",          
+            "Precio":"19$",          
+            "Stock":56 
+        },
+        {
+            "Nombre": "Remera Sonic - Tails Edición Aniversario 30 Años",
+            "Precio": "15$",        
+            "Stock":99
+        },
+        {
+            "Nombre": "Set Club Guys",   
+            "Precio": "20$",
+            "Stock": 50
+        },
+        {
+            "Nombre": "Team Sonic Racing", 
+            "Precio": "50$",
+            "Stock": 59   
+        },
+        {
+            "Nombre": "Sonic the Hedgehog (Gris)",  
+            "Precio": "15$",  
+            "Stock":30
+        },
+        {
+           "Nombre": "Sonic Lost World",
+           "Precio": "40$",
+           "Stock": 40
+        },
+        {
+            "Nombre": "Remera de Sonic - Shadow",
+            "Precio": "15$",
+            "Stock": 36
+        },
+        {
+            "Nombre": "Sonic Adventure 2",
+            "Precio": "10$",
+            "Stock": 19
+        },
+        {
+            "Nombre": "Sonic Anillos",
+            "Precio": "15$",
+            "Stock": 20
+        }
+    ]
+}

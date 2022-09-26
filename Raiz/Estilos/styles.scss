@@ -20,7 +20,7 @@ $fuente:'Koulen', cursive;
                 font-size: 2.4rem;
                 &:hover{
                     color: rgb(9, 86, 230);
-                }
+                }    
             }
         }
     }     
@@ -119,7 +119,6 @@ $fuente:'Koulen', cursive;
     background:linear-gradient(rgb(0, 62, 112),rgb(133, 200, 255));
     header{   
         .row{
-            background-color: black;
             .navitem{
                 font-family:$fuente;
                 color: white;
@@ -129,8 +128,162 @@ $fuente:'Koulen', cursive;
                 }
             }
         }
+        .botones1{
+            width: 100%;
+            flex-direction: row-reverse;
+            display: flex;
+            position: absolute;
+            padding: 0.6rem;
+            padding-right: 1rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            gap: 0.8rem;
+            .popup{
+                padding: 0.2rem;
+                border-radius: 5px;
+                display: flex;
+                font-size: 1.5rem;
+                border: 3px solid black;
+                font-weight: bold;
+                &:hover{
+                    background-color: rgb(192, 0, 0);
+                    color:white;
+                    transform: scale(1.12);
+                }
+            }
+        }
     }
     main{
+        #formPopup{
+            display: none;
+            border: solid black 5px;
+            border-radius: 12px;
+            background: rgb(116, 151, 247);
+            position: fixed;
+            margin-left: 40.5%;
+            margin-top: 6%;
+            z-index: 9;
+            padding: 1rem;
+            width: 19%;
+            opacity: 1 !important;
+            .divInicio{
+                display:flex;
+                justify-content: center;
+                .datosInicio{
+                    display: flex;
+                    border: solid rgb(0, 0, 0) 1px;
+                    width: 94%;
+                    margin: 4% auto;
+                    flex-direction: column;
+                    gap:1.3rem;
+                    justify-self: center;
+                    background-color: rgb(153, 153, 153);
+                    border-radius: 10px;
+                }   
+            }    
+            #botones{
+                margin-top: 5%;
+                display: flex;
+                font-weight: bold;
+                flex-direction: row; 
+                gap: 1rem;
+                .botones2{
+                    display: flex;
+                    gap: 0.5rem;
+                    flex-direction: column;
+                    width: 100%;
+                    #logear{
+                        font-weight: bold;
+                        &:hover{
+                            transform: scale(1.06);      
+                            background-color: rgb(151, 151, 151);
+                            font-weight: bold;
+                        }
+                    }
+                    #cerrarForm{
+                        font-weight: bold;
+                        background-color: rgb(209, 0, 0);
+                        color: white;
+                        &:hover{
+                            transform: scale(1.06);      
+                            background-color: rgb(255, 57, 57);
+                            font-weight: bold;
+                        }
+                    }
+                }
+                #enviar{
+                    font-weight: bold;
+                    &:hover{
+                        transform: scale(1.06);      
+                        background-color: rgb(0, 204, 0);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        #registroPopup{
+            display: none;
+            border: solid black 5px;
+            border-radius: 12px;
+            background: rgb(116, 151, 247);
+            position: fixed;
+            margin-left: 40.5%;
+            margin-top: 6%;
+            z-index: 9;
+            padding: 1rem;
+            width: 19%;
+            opacity: 1 !important;
+            .datosRegistro{
+                display: flex;
+                border: solid rgb(0, 0, 0) 1px;
+                width: 94%;
+                margin: 4% auto;
+                flex-direction: column;
+                gap:1.3rem;
+                justify-self: center;
+                background-color: rgb(153, 153, 153);
+                border-radius: 10px;
+                font-weight:600;
+            }
+            #botonesRe{
+                margin-top: 5%;
+                display: flex;
+                font-weight: bold;
+                flex-direction: row; 
+                gap: 1rem;
+                #botonesRe2{
+                    display: flex;
+                    gap: 0.5rem;
+                    flex-direction: column;
+                    width: 100%;
+                    #tengoRe{
+                        font-weight: bold;
+                    &:hover{
+                        transform: scale(1.06);      
+                        background-color: rgb(151, 151, 151);
+                        font-weight: bold;
+                        }
+                    }
+                    #cerrarFormRe{
+                        font-weight: bold;
+                        background-color: rgb(209, 0, 0);
+                        color: white;
+                        &:hover{
+                            transform: scale(1.06);      
+                            background-color: rgb(255, 57, 57);
+                            font-weight: bold;
+                        }
+                    }
+                }
+                #enviarRe{
+                    font-weight: bold;
+                    &:hover{
+                        transform: scale(1.06);      
+                        background-color: rgb(0, 204, 0);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
         .vendidos{
             font-size: 3.5rem;
             margin: 0.5%;
@@ -149,16 +302,76 @@ $fuente:'Koulen', cursive;
             border-left: none;
             border-right:none; 
         }
-        .catalogo{
-            font-size: 2.4rem;
-            margin: 0%;
-            color: rgb(247, 243, 243);
-            justify-content: center;
-            background-color: rgb(0, 0, 0);
-            font-family: $fuente;
+        #opac4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .catalogo{
+                font-size: 2.4rem;
+                margin: 0%;
+                color: rgb(247, 243, 243);
+                justify-content: center;
+                background-color: rgb(0, 0, 0);
+                font-family: $fuente;
+            }
+            #buscador{
+                background-color: rgb(179, 179, 179);
+                border: solid black 1px;
+                border-radius: 12px;
+                padding: 1.1rem;
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                margin: 1.3rem;
+                align-items: center;
+                #busPr{
+                    font-size: 1.2rem;
+                    font-family: $fuente;
+                    margin: 0%;
+                    color: black;
+                    text-align: center;
+                }
+                #search{
+                    border: solid black 1px;
+                    width: 120%;
+                }
+            }
         }
         .card{
-                margin: 2%;
+            margin: 2%;
+            .cartasGrandes{
+                display: flex;
+                gap:1rem;
+                justify-content: center;
+            }
+            .cartasMenores{
+                display: flex;
+                gap:1rem;
+                justify-content: flex-end;
+            }
+        }
+        .dragon{
+            &:hover{
+                transform: scale(1.1);
+            }    
+        }
+        #tablaProducto{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            #imgTable{
+                display: flex;
+                flex-direction:column;
+            }
+            .table_row{
+                display: flex;
+                td{
+                    width: 100%;
+                }
+                .row-json{
+                    text-align: end;
+                }
+            }
         }
     }
     footer{
@@ -178,8 +391,7 @@ $fuente:'Koulen', cursive;
             position:fixed;
         }
     }
-} 
-
+}
 /* La pagina de Personajes*/
 $fuente:'Koulen', cursive;
 
@@ -444,8 +656,7 @@ $fuente:'Koulen', cursive;
         font-style:inherit;
         color: rgb(211, 211, 211);
         background-color: black;  
-        margin-top: 1.7%;
-        margin-bottom: 0%;
+        
         .hola{
             width: 100%;
             display:flex;
