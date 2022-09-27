@@ -1,6 +1,8 @@
 /* En un principio yo tenia cada pagina dentro de una carpeta, por lo que varias etiquetas no les di una clase. Luego cuando junte todas las paginas de estilos me paso que se pisaban entre si las distintas etiquetas sin clase, por suerte solo tuve que asignarle una clase a las etiquetas "body" y el problema se resolvio*/
 
 /* La pagina de Inicio*/
+
+
 $fuente:'Koulen', cursive;
 
 *{
@@ -337,34 +339,57 @@ $fuente:'Koulen', cursive;
                 }
             }
         }
-        .cards{
-            gap: 5rem;
-            display: flex;
-            justify-content: center;
-            .Cartas{           
-                background-color: rgb(255, 255, 255);
-                border: rgb(104, 104, 104) solid 1px;
-                border-radius: 12px;
+        #opac5{
+            .contenedor{
+                display: none;
                 display: flex;
-                flex-direction: column;
-                width: 18rem;
-                .imagenPro{
-                    width: 286px;
-                    height: 220px;   
-                    align-self: center;
-                    justify-self: center;
-                }
-                .cartasBody{
-                    font-size: 50px;
-                    .textoCard{
-                        font-size: 1.7rem;
-                        font: $fuente;
+                flex-direction: row;
+                gap: 2rem;
+                justify-content: center;
+                .cartas{
+                    width: 24rem;
+                    background-color: white;
+                    border: black solid 1px;
+                    border-bottom-left-radius:  9px;
+                    border-bottom-right-radius: 9px;
+                    padding: 0;
+                    margin: 0;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2px;
+                    .cartasImg{
+                        width: 100%;
+                        .imagenPro{
+                            max-width: 100%;
+                            height: 310px;
+                            border-bottom: 1px black solid;
+                        }
+                    }
+                    .cartasBody{
+                        display: flex;
+                        flex-direction: column;
+                        justify-self: center;
+                        margin: 2%;
+                        justify-content: space-between;
+                        width: 90%;
+                        height: 80%;
+                        .nombreCard{
+                            text-align: center;
+                        }
+                        .precioCard{
+                            color: rgb(65, 184, 65);
+                            font-weight: 500;
+                            display: flex;
+                            justify-content: flex-end;
+                        }
                     }
                 }
             }
-            }
-        }
+        }       
     }
+}
+
     footer{
         font-family:$fuente;
         font-size: 18px;

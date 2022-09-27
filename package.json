@@ -5,21 +5,24 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss Raiz/Estilos/styles.scss Raiz/Estilos/styles.css",
+    "build-css": "node-sass --include-path scss Estilos/styles.scss Estilos/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AgustinZEN8/Sonic---Aguz.git"
+    "url": "git+https://github.com/AgustinZEN8/ProyectoFinalMartinez"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AgustinZEN8/Sonic---Aguz/issues"
+    "url": "https://github.com/AgustinZEN8/ProyectoFinalMartinez/issues"
   },
-  "homepage": "https://github.com/AgustinZEN8/Sonic---Aguz#readme",
+  "homepage": "https://github.com/AgustinZEN8/ProyectoFinalMartinez#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.4.34"
   }
 }

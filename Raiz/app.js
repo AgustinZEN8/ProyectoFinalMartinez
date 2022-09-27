@@ -1,3 +1,4 @@
+
 cargarProductos();  
 
 const iniciarSesion = () => {
@@ -54,54 +55,66 @@ async function cargarProductos(){
 }
 
 let mapearProductos = (arrayProductos) => {
+    const contenedorCartas = document.createElement ("div");
+    contenedorCartas.setAttribute("id","container");
+    contenedorCartas.setAttribute("class","contenedor card-group row m-3 cards");
+
     for( let i = 0; i < arrayProductos.length; i++){
         let producto = arrayProductos[i];
 
         const cartas = document.createElement("div");
-        cartas.setAttribute("class","Cartas");
+        cartas.setAttribute("class","cartas");
+
+        const cartasImg = document.createElement("div");
+        cartasImg.setAttribute("class","cartasImg");
 
         const imgProducto = document.createElement("img");
         imgProducto.setAttribute('src', producto.Imagen);
-        imgProducto.setAttribute('class', "imagenPro");
+        imgProducto.setAttribute('class', "imagenPro card-img-top");
 
         const cartasBody = document.createElement("div");
         cartasBody.setAttribute("class","cartasBody")
-        
-        const nombreProducto = document.createElement("H3");
-        nombreProducto.setAttribute("class","textoCard");
+
+        const listaDatos = document.createElement("ul");
+        listaDatos.setAttribute("class","listaDatos");
+
+        const nombreProducto = document.createElement("h4");
+        nombreProducto.setAttribute("class","nombreCard");
         nombreProducto.innerText = producto.Nombre;
 
         const precioProducto = document.createElement("h2");
-        precioProducto.setAttribute("class","textoCard");
-        precioProducto.innerText = ("Precio: ")+producto.Precio;
+        precioProducto.setAttribute("class","precioCard");
+        precioProducto.innerText = producto.Precio;
 
-        const stockProducto = document.createElement("h2");
+        const stockProducto = document.createElement("h5");
         stockProducto.setAttribute("class","textoCard");
         stockProducto.innerText = ("Stock: ")+producto.Stock;
         
-        document.getElementById("opac5").appendChild(cartas);
-
-        cartas.appendChild(imgProducto);
-        cartas.appendChild(cartasBody);
-        cartasBody.appendChild(nombreProducto);
-        cartasBody.appendChild(precioProducto);
-        cartasBody.appendChild(stockProducto);
+        document.getElementById("opac5").appendChild(contenedorCartas);
+        contenedorCartas.appendChild(cartas);
+        cartas.appendChild(cartasImg);
+            cartasImg.appendChild(imgProducto);
+        cartas.appendChild(cartasBody);    
+            cartasBody.appendChild(nombreProducto);
+            cartasBody.appendChild(precioProducto);
+            cartasBody.appendChild(stockProducto);
     }
 };
 
 
-const buscarProducto = () => {
-    let busqueda = document.getElementById("search").value;
-
-    for (i=0; i<productosArr.length; i++){
-        if (productosArr.Nombre == busqueda) {
-           alert(productosArr[i]); 
-           return;
-        }
-     }
-     alert("Value not found");
-}
-
+const buscarProducto = (e) => {
+    e.preventDefault();
+    let containerProductos = document.getElementById("container");
+    containerProductos && containerProductos.remove();
+  
+    e.target.value.length > 0
+      ? mapearProductos(
+          productosArr.filter((producto) =>
+            producto.Nombre.includes(e.target.value)
+          )
+        )
+      : mapearProductos(productosArr)
+  };
 
 
 function guardarUsuario() {
@@ -133,8 +146,8 @@ boton.addEventListener("click",iniciarSesion);
 let botonReg = document.getElementById("botonRe");
 botonReg.addEventListener("click",registroCuenta);
 
-let botonBus = document.getElementById("botonBus");
-botonBus.addEventListener("click",buscarProducto)
+let inputBusqueda = document.getElementById("search");
+inputBusqueda.addEventListener('input', buscarProducto)
 
 //** Comandos del LOGIN *//
 let botonLog = document.getElementById("logear");
