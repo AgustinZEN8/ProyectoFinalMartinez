@@ -337,40 +337,31 @@ $fuente:'Koulen', cursive;
                 }
             }
         }
-        .card{
-            margin: 2%;
-            .cartasGrandes{
-                display: flex;
-                gap:1rem;
-                justify-content: center;
-            }
-            .cartasMenores{
-                display: flex;
-                gap:1rem;
-                justify-content: flex-end;
-            }
-        }
-        .dragon{
-            &:hover{
-                transform: scale(1.1);
-            }    
-        }
-        #tablaProducto{
+        .cards{
+            gap: 5rem;
             display: flex;
-            width: 100%;
             justify-content: center;
-            #imgTable{
+            .Cartas{           
+                background-color: rgb(255, 255, 255);
+                border: rgb(104, 104, 104) solid 1px;
+                border-radius: 12px;
                 display: flex;
-                flex-direction:column;
+                flex-direction: column;
+                width: 18rem;
+                .imagenPro{
+                    width: 286px;
+                    height: 220px;   
+                    align-self: center;
+                    justify-self: center;
+                }
+                .cartasBody{
+                    font-size: 50px;
+                    .textoCard{
+                        font-size: 1.7rem;
+                        font: $fuente;
+                    }
+                }
             }
-            .table_row{
-                display: flex;
-                td{
-                    width: 100%;
-                }
-                .row-json{
-                    text-align: end;
-                }
             }
         }
     }
@@ -391,7 +382,7 @@ $fuente:'Koulen', cursive;
             position:fixed;
         }
     }
-}
+
 /* La pagina de Personajes*/
 $fuente:'Koulen', cursive;
 

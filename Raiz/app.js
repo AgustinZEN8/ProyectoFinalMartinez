@@ -43,18 +43,66 @@ const registroCuenta = () =>{
 
 let productosArr = [];
 
-function cargarProductos(){
-    fetch ('/Raiz/Assets/productos.JSON')
+async function cargarProductos(){
+    await fetch ('/Raiz/Assets/productos.JSON')
     .then((response) => response.json())
-    .then((data) => 
-        productosArr = data.productos
+    .then((data) => {
+        productosArr = data.productos;
+        mapearProductos(productosArr);
+        }
     );
 }
 
+let mapearProductos = (arrayProductos) => {
+    for( let i = 0; i < arrayProductos.length; i++){
+        let producto = arrayProductos[i];
+
+        const cartas = document.createElement("div");
+        cartas.setAttribute("class","Cartas");
+
+        const imgProducto = document.createElement("img");
+        imgProducto.setAttribute('src', producto.Imagen);
+        imgProducto.setAttribute('class', "imagenPro");
+
+        const cartasBody = document.createElement("div");
+        cartasBody.setAttribute("class","cartasBody")
+        
+        const nombreProducto = document.createElement("H3");
+        nombreProducto.setAttribute("class","textoCard");
+        nombreProducto.innerText = producto.Nombre;
+
+        const precioProducto = document.createElement("h2");
+        precioProducto.setAttribute("class","textoCard");
+        precioProducto.innerText = ("Precio: ")+producto.Precio;
+
+        const stockProducto = document.createElement("h2");
+        stockProducto.setAttribute("class","textoCard");
+        stockProducto.innerText = ("Stock: ")+producto.Stock;
+        
+        document.getElementById("opac5").appendChild(cartas);
+
+        cartas.appendChild(imgProducto);
+        cartas.appendChild(cartasBody);
+        cartasBody.appendChild(nombreProducto);
+        cartasBody.appendChild(precioProducto);
+        cartasBody.appendChild(stockProducto);
+    }
+};
+
+
 const buscarProducto = () => {
     let busqueda = document.getElementById("search").value;
-    (productosArr.Nombre).find(element => element == busqueda.value);
+
+    for (i=0; i<productosArr.length; i++){
+        if (productosArr.Nombre == busqueda) {
+           alert(productosArr[i]); 
+           return;
+        }
+     }
+     alert("Value not found");
 }
+
+
 
 function guardarUsuario() {
     let userEmail = document.getElementById("emailRe").value;

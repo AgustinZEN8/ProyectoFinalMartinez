@@ -3,52 +3,74 @@
         {
             "Nombre":"Coleccion de figuras Sonic The Hedgehog 2",
             "Precio": "300$",
-            "Stock":99
+            "Stock":99,
+            "Imagen": "https://personaspain.es/wp-content/uploads/2022/02/Sonic-Movie-2-PR-Image-FINAL-Pequena.jpg"
         },
         {
             "Nombre":"Sonic mania",          
             "Precio":"19$",          
-            "Stock":56 
+            "Stock":56 ,
+            "Imagen": "https://cdn.akamai.steamstatic.com/steam/apps/584400/capsule_616x353.jpg?t=1642416672"
         },
         {
             "Nombre": "Remera Sonic - Tails Edición Aniversario 30 Años",
             "Precio": "15$",        
-            "Stock":99
+            "Stock":99,
+            "Imagen": "https://m.media-amazon.com/images/I/81xgvAFMHfL._AC_SX679_.jpg"
         },
         {
-            "Nombre": "Set Club Guys",   
-            "Precio": "20$",
-            "Stock": 50
+            "Nombre": "Set Cable Guys",   
+            "Precio": "65$",
+            "Stock": 50,
+            "Imagen":"https://lcdn.be/180254-large_default/sonic-the-hedgehog-cable-guy-holder-charger-for-controller-exclusive-deluxe-giftbox.webp"
         },
         {
             "Nombre": "Team Sonic Racing", 
             "Precio": "50$",
-            "Stock": 59   
+            "Stock": 59  ,
+            "Imagen": "https://pbs.twimg.com/media/EgMAS3tX0AQ3hVr.jpg:large"
         },
         {
-            "Nombre": "Sonic the Hedgehog (Gris)",  
+            "Nombre": "Sonic the Hedgehog (Black)",  
             "Precio": "15$",  
-            "Stock":30
+            "Stock":30,
+            "Imagen": "https://d3d71ba2asa5oz.cloudfront.net/12009653/images/m52865_713__1.jpg"
         },
         {
            "Nombre": "Sonic Lost World",
            "Precio": "40$",
-           "Stock": 40
+           "Stock": 40,
+           "Imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/329440/capsule_616x353.jpg?t=1603130029"
         },
         {
             "Nombre": "Remera de Sonic - Shadow",
             "Precio": "15$",
-            "Stock": 36
+            "Stock": 36,
+            "Imagen": "https://m.media-amazon.com/images/I/81K8XnomJYL._AC_SX569_.jpg"
         },
         {
             "Nombre": "Sonic Adventure 2",
             "Precio": "10$",
-            "Stock": 19
+            "Stock": 19,
+            "Imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/213610/capsule_616x353.jpg?t=1603129668"
         },
         {
             "Nombre": "Sonic Anillos",
             "Precio": "15$",
-            "Stock": 20
+            "Stock": 20,
+            "Imagen": "https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7C91yvMd5IxbL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UL1500_.png"
+        },
+        {
+            "Nombre" : "Sonic Funko",
+            "Precio" : "15$",
+            "Stock"  : 20,
+            "Imagen" : "https://http2.mlstatic.com/D_NQ_NP_786053-MLA44765310592_012021-O.jpg"
+        },
+        {
+            "Nombre" : "Set Mochilas Sonic",
+            "Precio" : "20$",
+            "Stock"  : 50,
+            "Imagen" :"https://cdn11.bigcommerce.com/s-t8bvbs505h/images/stencil/1280x1280/products/11616911/12484054/51Gx98LnutL__78568.1610137601.jpg?c=2"
         }
     ]
 }
