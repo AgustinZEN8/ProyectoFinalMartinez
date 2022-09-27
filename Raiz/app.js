@@ -54,6 +54,7 @@ async function cargarProductos(){
     );
 }
 
+
 let mapearProductos = (arrayProductos) => {
     const contenedorCartas = document.createElement ("div");
     contenedorCartas.setAttribute("id","container");
